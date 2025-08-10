@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Class Schedule - BSIT 3</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #f6f8fb;
+    color: #333;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+    color: white;
+    padding: 15px;
+    text-align: center;
+  }
+  h1 {
+    margin: 0;
+    font-size: 1.4em;
+  }
+  p {
+    font-size: 0.9em;
+    margin-top: 3px;
+  }
+  .day-section {
+    width: 95%;
+    margin: 10px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    background: white;
+  }
+  .day-header {
+    background: #eef4ff;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .day-header:hover {
+    background: #d9e4ff;
+  }
+  .day-header span {
+    font-size: 1.3em;
+    transition: transform 0.3s ease;
+  }
+  .day-header.open span {
+    transform: rotate(90deg);
+  }
+  .classes {
+    display: none;
+    padding: 10px;
+  }
+  .class {
+    padding: 10px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  .class:last-child {
+    border-bottom: none;
+  }
+  .time {
+    font-weight: bold;
+    color: #2575fc;
+    font-size: 1em;
+  }
+  .course {
+    margin-top: 3px;
+    font-size: 1em;
+  }
+  .room {
+    font-size: 0.85em;
+    color: #666;
+  }
+  @media (max-width: 600px) {
+    h1 { font-size: 1.2em; }
+    .time { font-size: 0.95em; }
+    .course { font-size: 0.9em; }
+    .room { font-size: 0.8em; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>BSIT 3 - Class Schedule</h1>
+  <p>1st Sem 2025-2026 • Mark Froilan L. Lendio</p>
+</header>
+
+<div id="schedule">
+  <!-- Monday -->
+  <div class="day-section">
+    <div class="day-header">Monday <span>▶</span></div>
+    <div class="classes">
+      <div class="class"><div class="time">1:30 - 3:00 PM</div><div class="course">IT-IMDBSYS31 LAB</div><div class="room">Room 530</div></div>
+      <div class="class"><div class="time">3:00 - 4:00 PM</div><div class="course">IT-IMDBSYS31</div><div class="room">Room 530B</div></div>
+      <div class="class"><div class="time">7:01 - 8:31 PM</div><div class="course">IT-NETWORK31 LAB</div><div class="room">Room 524</div></div>
+      <div class="class"><div class="time">8:31 - 9:31 PM</div><div class="course">IT-NETWORK31</div><div class="room">Room 524</div></div>
+    </div>
+  </div>
+
+  <!-- Tuesday -->
+  <div class="day-section">
+    <div class="day-header">Tuesday <span>▶</span></div>
+    <div class="classes">
+      <div class="class"><div class="time">10:30 - 12:00 PM</div><div class="course">IT-FREFORLAN</div><div class="room">Room 539</div></div>
+    </div>
+  </div>
+
+  <!-- Wednesday -->
+  <div class="day-section">
+    <div class="day-header">Wednesday <span>▶</span></div>
+    <div class="classes">
+      <div class="class"><div class="time">1:30 - 3:00 PM</div><div class="course">IT-IMDBSYS31 LAB</div><div class="room">Room 530</div></div>
+      <div class="class"><div class="time">3:00 - 4:00 PM</div><div class="course">IT-IMDBSYS31</div><div class="room">Room 530B</div></div>
+      <div class="class"><div class="time">7:01 - 8:31 PM</div><div class="course">IT-NETWORK31 LAB</div><div class="room">Room 524</div></div>
+      <div class="class"><div class="time">8:31 - 9:31 PM</div><div class="course">IT-NETWORK31</div><div class="room">Room 524</div></div>
+    </div>
+  </div>
+
+  <!-- Thursday -->
+  <div class="day-section">
+    <div class="day-header">Thursday <span>▶</span></div>
+    <div class="classes">
+      <div class="class"><div class="time">10:30 - 12:00 PM</div><div class="course">IT-FREFORLAN</div><div class="room">Room 539</div></div>
+    </div>
+  </div>
+
+  <!-- Friday -->
+  <div class="day-section">
+    <div class="day-header">Friday <span>▶</span></div>
+    <div class="classes">
+      <div class="class"><div class="time">7:30 - 9:30 AM</div><div class="course">IT-ELPYTH</div><div class="room">Room 530A</div></div>
+      <div class="class"><div class="time">10:30 - 1:30 PM</div><div class="course">IT-ELPYTH LAB</div><div class="room">Room 526</div></div>
+      <div class="class"><div class="time">1:30 - 4:30 PM</div><div class="course">IT-FREPM</div><div class="room">Room 536</div></div>
+      <div class="class"><div class="time">5:31 - 6:31 PM</div><div class="course">CC-HCI31</div><div class="room">Room 530B</div></div>
+    </div>
+  </div>
+
+  <!-- Saturday -->
+  <div class="day-section">
+    <div class="day-header">Saturday <span>▶</span></div>
+    <div class="classes">
+      <div class="class"><div class="time">7:30 - 10:30 AM</div><div class="course">IT-TESTQUA31 LAB</div><div class="room">Room 530</div></div>
+      <div class="class"><div class="time">10:30 - 12:30 PM</div><div class="course">IT-TESTQUA31</div><div class="room">Room 537</div></div>
+      <div class="class"><div class="time">3:30 - 6:31 PM</div><div class="course">CC-RESCOM31</div><div class="room">Room 539</div></div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.querySelectorAll('.day-header').forEach(header => {
+  header.addEventListener('click', () => {
+    const classesDiv = header.nextElementSibling;
+    const arrow = header.querySelector('span');
+    const isOpen = classesDiv.style.display === 'block';
+    document.querySelectorAll('.classes').forEach(c => c.style.display = 'none');
+    document.querySelectorAll('.day-header span').forEach(a => a.classList.remove('open'));
+    if (!isOpen) {
+      classesDiv.style.display = 'block';
+      arrow.classList.add('open');
+    }
+  });
+});
+</script>
+
+</body>
+</html>
