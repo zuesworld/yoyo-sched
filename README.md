@@ -1,0 +1,2 @@
+# yoyo-sched
+BSIT 3E 2ND SEMESTER SCHEDULE
